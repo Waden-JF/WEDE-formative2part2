@@ -1,0 +1,48 @@
+<!-- Enquiry page with a sample, non-working form. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ask the Greenloop Campus Pantry about access, availability, donations, or partnerships.">
+  <title>Enquiries | Greenloop Campus Pantry</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <!-- Shared site logo and navigation. -->
+  <header class="site-header"><div class="container header-inner">
+    <a class="brand" href="index.html" aria-label="GreenLoop Campus Pantry home"><span class="brand-mark" aria-hidden="true">G</span><span>GreenLoop<span class="brand-subtitle">Campus Pantry</span></span></a>
+    <nav class="site-nav" aria-label="Main navigation"><a href="index.html">Home</a><a href="about.html">About</a><a href="products.html">Pantry</a><a href="volunteer.html">Volunteer</a><a href="enquiry.html" aria-current="page">Enquiries</a><a href="contact.html">Contact</a></nav>
+  </div></header>
+  <!-- Main enquiry information and form. -->
+  <main id="main">
+    <!-- Page title and enquiry form. -->
+    <section class="page-hero"><div class="container page-hero-inner"><p class="eyebrow">We’re here to help</p><h1>What would you<br>like to know?</h1><p>Ask us about the pantry, available items, volunteering, donations, or working together.</p></div></section>
+    <section class="section"><div class="container form-layout">
+      <div class="form-intro"><p class="eyebrow">Send an enquiry</p><h2>Let’s start a conversation.</h2><p>Use the form to describe your question, donation, or interest. A working pantry site could follow up using your preferred contact method.</p><p class="small-note">Fields marked <span aria-hidden="true">*</span> are required.</p></div>
+      <!-- The demo form displays a message but does not send data. -->
+      <form class="form-card" action="#" method="post" data-demo-form>
+        <div class="field"><label for="name">Your name <span aria-hidden="true">*</span></label><input id="name" name="name" type="text" autocomplete="name" required></div>
+        <div class="field"><label for="email">Email address <span aria-hidden="true">*</span></label><input id="email" name="email" type="email" autocomplete="email" required></div>
+        <div class="field"><label for="topic">What is your enquiry about? <span aria-hidden="true">*</span></label><select id="topic" name="topic" required><option value="" selected disabled>Select a topic</option><option>Food or product question</option><option>Volunteer interest</option><option>Food donation</option><option>Sponsorship or partnership</option><option>Something else</option></select></div>
+        <div class="field"><label for="message">Your message <span aria-hidden="true">*</span></label><textarea id="message" name="message" rows="6" required></textarea></div>
+        <fieldset class="field contact-choice"><legend>Preferred contact method <span aria-hidden="true">*</span></legend><label><input type="radio" name="preferred-contact" value="email" required> Email</label><label><input type="radio" name="preferred-contact" value="telephone"> Telephone</label></fieldset>
+        <button class="button button-dark" type="submit">Send enquiry</button>
+        <p class="form-status" role="status" hidden></p>
+        <p class="form-disclaimer">This is a student-project form. It does not send or store your information.</p>
+      </form>
+    </div></section>
+  </main>
+  <!-- Shared contact information and project note. -->
+  <footer class="site-footer">
+  <!-- Adds a confirmation message to demo forms. -->
+    <div class="container footer-content">
+      <div><a class="brand brand-footer" href="index.html"><span class="brand-mark" aria-hidden="true">G</span><span>GreenLoop<span class="brand-subtitle">Campus Pantry</span></span></a><p>Affordable food and less food waste on campus.</p></div>
+      <div><h2>Contact</h2><address>Student Centre, Main Campus<br>Monday–Friday, 12:00–14:00<br><a href="mailto:greenloopcampus@example.com">greenloopcampus@example.com</a><br><a href="tel:+27000000000">+27 00 000 0000</a></address></div>
+      <div><h2>Follow us</h2><p><a href="https://www.instagram.com/greenloopcampus" target="_blank" rel="noopener noreferrer">Instagram: @greenloopcampus</a></p><p class="footer-note">Fictional student project. Contact details and hours are examples.</p></div>
+    </div>
+  </footer>
+  <script src="script.js" defer></script>
+</body>
+</html>
